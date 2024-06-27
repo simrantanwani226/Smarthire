@@ -1,0 +1,218 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.navbar {
+  background-color: #343a40;
+}
+
+.navbar a {
+  color: orangered !important;
+}
+
+.navbar a:hover {
+  color: grey !important;
+}
+
+.jumbotron {
+  background-color: #f8f9fa;
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  border-radius: 0.3rem;
+  text-align: center;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.search-bar select,
+.search-bar input {
+  margin-right: 1rem;
+}
+
+h1, h2 {
+  color: #343a40;
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1.5rem;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  cursor: pointer;
+  border-radius: 0.25rem;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.container {
+  padding: 2rem 1rem;
+}
+
+.row {
+  margin-bottom: 1rem;
+}
+
+.search-bar select,
+.search-bar input,
+.search-bar button {
+  height: 2.5rem;
+  line-height: 2.5rem;
+}
+
+.search-bar button {
+  margin-left: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .search-bar {
+    flex-direction: column;
+  }
+
+  .search-bar select,
+  .search-bar input,
+  .search-bar button {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+}
+
+.footer {
+  background-color: #343a40;
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #0056b3;
+}
+
+/* Form Container Styles */
+.form-container {
+  display: flex;
+  width: 100%;
+  max-width: 1000px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: white;
+}
+
+.form-content {
+  padding: 2rem;
+  flex: 1;
+}
+
+.form-content h1 {
+  margin-bottom: 0.5rem;
+}
+
+.form-content p {
+  color: #888;
+  margin-bottom: 1.5rem;
+}
+
+.form-content input {
+  width: calc(100% - 2rem);
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-content .remember-me {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.form-content .remember-me input {
+  margin-right: 0.5rem;
+}
+
+.form-content .forgot-password {
+  color: #f39c12;
+  text-align: right;
+  margin-bottom: 1.5rem;
+}
+
+.form-content .form-button {
+  background: linear-gradient(to right, #f39c12, #e67e22);
+  border: none;
+  padding: 0.75rem;
+  width: 100%;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-content .form-button:hover {
+  background: linear-gradient(to right, #e67e22, #d35400);
+}
+
+.form-content .sign-up {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.form-content .sign-up a {
+  color: #f39c12;
+}
+
+.form-image {
+  background: url('./img/login-bg.png') center center/cover no-repeat;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+.form-image h2 {
+  font-size: 1.5rem;
+}
